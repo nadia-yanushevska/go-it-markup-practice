@@ -2,6 +2,18 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 /* #endregion */
 
 /* #region header */
@@ -27,12 +39,64 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    text-decoration: none;
 }
 
 .menu-link:hover,
 .menu-link:focus,
 .menu-link:active {
     color: #fd9222;
+}
+/* #endregion */
+
+/* #region hero */
+.hero {
+    border-radius: 30px;
+    background-color: rgba(17, 17, 17, 0.7);
+    color: #fff;
+}
+.hero-h {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21; /* 121.429% */
+    letter-spacing: -0.03em;
+}
+
+.hero-btn-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-btn-buy {
+    border-radius: 100px;
+    background-color: #fd9222;
+    cursor: pointer;
+}
+
+.hero-btn-buy:focus,
+.hero-btn-buy:hover,
+.hero-btn-buy:active {
+    border-radius: 100px;
+    background: #fcf1e0;
+    color: #fd9222;
+}
+
+.hero-btn-made {
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+
+.hero-btn-made:hover,
+.hero-btn-made:focus,
+.hero-btn-made:active {
+    border-radius: 100px;
+    border: 1px solid #fd9222;
+    color: #fd9222;
+}
+
+.hero-scroll {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.03em;
 }
 /* #endregion */
