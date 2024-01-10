@@ -14,15 +14,44 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.container {
+    width: 1168px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+header {
+    height: fit-content;
+}
+
+h1 {
+    margin: 0;
+}
 /* #endregion */
 
 /* #region header */
 .logo {
+    display: flex;
     color: #111;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: -0.03em;
+    margin-right: auto;
 }
 .italic-logo {
     font-style: italic;
@@ -30,6 +59,9 @@ a {
 .menu {
 }
 .menu-list {
+    display: flex;
+    gap: 24px;
+    margin-right: 90px;
 }
 .menu-item {
 }
@@ -39,6 +71,7 @@ a {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    padding: 12px 0;
 }
 
 .menu-link:hover,
@@ -46,24 +79,59 @@ a {
 .menu-link:active {
     color: #fd9222;
 }
+
+.social-list {
+    display: flex;
+    gap: 14px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+.social-list {
+    padding: 20px 0;
+}
 /* #endregion */
 
 /* #region hero */
 .hero {
     border-radius: 30px;
-    background-color: rgba(17, 17, 17, 0.7);
     color: #fff;
+    margin-bottom: 80px;
 }
+
+.hero .container {
+    background-color: rgba(17, 17, 17, 0.7);
+    height: 600px;
+
+    padding: 381px 40px 40px 40px;
+    border-radius: 30px;
+}
+
+.hero-container {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
 .hero-h {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.21; /* 121.429% */
     letter-spacing: -0.03em;
+    max-width: 484px;
+    margin-bottom: 32px;
 }
 
 .hero-btn-text {
     font-size: 14px;
     font-weight: 600;
+    padding: 14px 40px;
 }
 
 .hero-btn-buy {
@@ -94,9 +162,29 @@ a {
 }
 
 .hero-scroll {
+    margin-left: auto;
+    display: flex;
+    gap: 14px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28;
     letter-spacing: -0.03em;
 }
 /* #endregion */
+.benefits {
+    background-color: #1e1823;
+    color: white;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 88px;
+}
+
+.benefits .container {
+    padding: 50px 0px;
+}
+
+.benefits-li {
+    width: calc((100%-166px) / 3);
+}
