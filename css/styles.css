@@ -38,8 +38,45 @@ header {
     height: fit-content;
 }
 
-h1 {
+p,
+h1,
+h2,
+h3 {
     margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding-bottom: 120px;
+}
+
+.section:first {
+    padding-top: 120px;
+}
+
+.section-h {
+    width: 412px;
+    color: #111;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin: auto;
+    padding-bottom: 50px;
 }
 /* #endregion */
 
@@ -102,7 +139,6 @@ h1 {
 .hero {
     border-radius: 30px;
     color: #fff;
-    margin-bottom: 80px;
 }
 
 .hero .container {
@@ -165,12 +201,34 @@ h1 {
     margin-left: auto;
     display: flex;
     gap: 14px;
+    align-items: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28;
     letter-spacing: -0.03em;
 }
+
+.scroll-icon {
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* #endregion */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    row-gap: 24px;
+}
+.item {
+    width: calc((100% - 3 * 18px) / 4);
+    border-radius: 15px;
+    padding: 28px 23px;
+}
+/* #region benefits */
 .benefits {
     background-color: #1e1823;
     color: white;
@@ -188,3 +246,77 @@ h1 {
 .benefits-li {
     width: calc((100%-166px) / 3);
 }
+/* #endregion */
+/* #region ingredients */
+
+.ingredients-item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    background-color: #fd9222;
+    color: #fff;
+}
+
+.ingredients-img {
+    margin: 0 auto;
+}
+
+.ingredients-item:nth-of-type(4n + 3) {
+    background-color: #1e1823;
+}
+.ingredients-item:nth-of-type(2n) {
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #fd9222;
+}
+/* #endregion */
+/* #region made */
+/* #endregion */
+/* #region products */
+.products {
+    text-align: center;
+}
+.products-item {
+    width: calc((100% - 3 * 18px) / 4);
+    padding: 32px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fff;
+}
+.card-h {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.card-text {
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.24px;
+    margin-bottom: 18px;
+}
+.card-btn {
+    display: flex;
+    padding: 8px 20px;
+    align-items: center;
+    margin: auto;
+    gap: 14px;
+    border-radius: 100px;
+
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fafafa;
+    font-size: 14px;
+    font-weight: 600;
+}
+.card-img {
+    margin: 0 auto;
+}
+/* #endregion */
+/* #region top-sellers */
+/* #endregion */
+/* #region reviews */
+/* #endregion */
+/* #region footer */
+/* #endregion */
