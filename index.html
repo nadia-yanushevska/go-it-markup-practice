@@ -315,7 +315,7 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="footer-top">
+                <div class="footer-row">
                     <p class="footer-h">Chocolate a delicious cure for a bad day</p>
                     <div class="footer-social">
                         <p class="footer-p">Social networks</p>
@@ -346,14 +346,14 @@
                     <div class="footer-address">
                         <p class="footer-p">Contact us</p>
                         <address>
-                            <ul>
-                                <li><a href="tel:+380684439426"></a>+380 (68) 443-94-26</li>
-                                <li><a href="mailto:simplychoc@gmail.com"></a>simplychoc@gmail.com</li>
+                            <ul class="footer-address-list">
+                                <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
+                                <li><a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
                             </ul>
                         </address>
                     </div>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer-row">
                     <div class="footer-nav">
                         <nav class="menu">
                             <ul class="menu-list">
@@ -363,7 +363,13 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="footer-form"></div>
+                    <div class="footer-form-div">
+                        <form action="" class="footer-form">
+                            <label for="subscribe-name" class="visually-hidden">Subscribe here</label>
+                            <input type="email" id="subscribe-name" class="footer-input" name="user_name" placeholder="Enter your email" />
+                            <button type="submit" class="hero-btn-buy hero-btn-text">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </footer>
